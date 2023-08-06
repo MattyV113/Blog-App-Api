@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { signupSchema } from '../../Validations/UserValidation';
-import Astronout from '/Users/mattyv113/Desktop/Blog-App/src/assets/7000_3_01.jpg';
+import Astronout from '/src/assets/7000_3_01.jpg';
 import { useFormik } from 'formik';
 
 function Signup() {

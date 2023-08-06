@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/authContext';
-import NavLogo from '/Users/mattyv113/Desktop/Blog-App/src/assets/3600_8_07.jpg';
+import NavLogo from '/src/assets/3600_8_07.jpg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 import NavLinks from './NavLinks';
