@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useFormik } from 'formik';
 import '@fortawesome/fontawesome-free/js/all.js';
 
-import Astronout from '/Users/mattyv113/Desktop/Blog-App/src/assets/3800_2_03.jpg';
+import Astronout from '/src/assets/3800_2_03.jpg';
 import { AuthContext } from '../../context/authContext';
 import { loginSchema } from '../../Validations/UserValidation';
 
@@ -44,7 +44,7 @@ function Login() {
 
   return (
     <div className="w-full h-screen flex">
-      <div className="grid grid-cols-1 rounded md:grid-cols-2 m-auto h-[500px] max-w-[700px] shadow-lg shadow-gray-600 ">
+      <div className="grid grid-cols-1 rounded md:grid-cols-2 m-auto h-[500px] max-w-[750px] shadow-lg shadow-gray-600 ">
         {error && (
           <p text-2xl text-red-600>
             {error}

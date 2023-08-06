@@ -47,7 +47,7 @@ function Signup() {
 
   return (
     <div className="w-full h-screen  flex">
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded m-auto h-[670px] sm:h-[580px]  border-2 border-gray-300 shadow-lg shadow-gray-600 sm:max-w-[800px] ">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded m-auto h-[670px] sm:h-[580px]  border-2 border-gray-300 shadow-lg shadow-gray-600 sm:max-w-[850px] ">
         <div className="p-4 flex flex-col">
           <form onSubmit={handleSubmit}>
             <h3 className="text-4xl font-bold text-center mb-4">
