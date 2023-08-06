@@ -24,7 +24,7 @@ dotenv.config();
 const randomImgName = (bytes = 32) => crypto.randomBytes(bytes).toString('hex');
 
 const bucketName = process.env.BUCKET_NAME;
-const bucketRegion = process.env.AWS_REGION;
+const bucketRegion = process.env.BUCKET_REGION;
 const accessKey = process.env.ACCESS_KEY_ID;
 const secretAccessKey = process.env.ACCESS_SECRET_KEY_ID;
 
