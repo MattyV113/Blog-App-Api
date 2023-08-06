@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLogo from '/Users/mattyv113/Desktop/Blog-App/src/assets/3600_8_07.jpg';
+import NavLogo from '/src/assets/3600_8_07.jpg';
 import { SiTailwindcss } from 'react-icons/si';
 import { GrReactjs, GrNode } from 'react-icons/gr';
 
