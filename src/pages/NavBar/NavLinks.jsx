@@ -4,7 +4,7 @@ import { AuthContext } from '../../context/authContext';
 
 function NavLinks() {
   const { currentUser } = useContext(AuthContext);
-  const naviaget = useNavigate();
+  const navigate = useNavigate();
   const [showModal, setShowModal] = React.useState(false);
 
   const handleCreatePost = () => {

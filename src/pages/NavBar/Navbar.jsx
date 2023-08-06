@@ -29,7 +29,7 @@ const Navbar = () => {
             {' '}
             <img className="hidden sm:block w-[80px]" src={NavLogo} alt="" />
           </Link>
-          <h3 className="text-black mt-[23px] ">TechNext</h3>
+          <h3 className="text-black mt-[33px] ">TechNext</h3>
         </div>
         <NavLinks />
         <div className="flex items-center gap-4">

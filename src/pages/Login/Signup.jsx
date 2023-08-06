@@ -124,7 +124,7 @@ function Signup() {
               <div className="relative flex w-full flex-wrap items-stretch mb-3">
                 <input
                   type="password"
-                  name="password"
+                  name="confirmPassword"
                   placeholder="Confirm Password"
                   value={values.confirmPassword}
                   onChange={handleChange}
