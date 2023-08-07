@@ -8,6 +8,12 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:5000',
     },
+    watch: {
+      usePolling: true,
+    },
+    host: true, // needed for the Docker Container port mapping to work
+    strictPort: true,
+    port: 5173,
     build: {
       assetsInlineLimit: '2048',
       outDir: 'build',

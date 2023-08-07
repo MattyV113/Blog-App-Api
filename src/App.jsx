@@ -7,8 +7,7 @@ import './index.css';
 import WritePost from './pages/WritePost';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ForgotPassword from './pages/ResetPassword/ForgotPassword';
-import Navbar from './pages/NavBar/Navbar';
-import Footer from './pages/Footer/Footer';
+
 import SinglePost from './pages/SinglePost';
 import UserProfile from './UserProfile/UserProfile';
 import EditProfile from './UserProfile/EditUserProfile';
