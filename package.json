@@ -7,8 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "start": "npm run dev",
-    "postinstall": "prisma generate",
-    "deploy": "prisma migrate deploy",
     "serve": "npm run build && vite preview"
   },
   "dependencies": {
