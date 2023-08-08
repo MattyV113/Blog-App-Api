@@ -227,6 +227,9 @@ router.post('/forgot-password', async (req, res) => {
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
+     host: "https://blog-app-production-0df7.up.railway.app", // smtp international
+     secure: true, // force port 465
+     // default port
     auth: {
       type: 'OAuth2',
       user: user.email,
