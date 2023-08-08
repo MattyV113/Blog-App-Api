@@ -223,7 +223,7 @@ router.post('/forgot-password', async (req, res) => {
     },
   });
 
-  const link = `http://localhost:5173/reset-password/${user.id}`;
+  const link = `https://blog-app-production-0df7.up.railway.app/reset-password/${user.id}`;
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
