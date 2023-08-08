@@ -227,9 +227,6 @@ router.post('/forgot-password', async (req, res) => {
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
-     host: "https://blog-app-production-0df7.up.railway.app", // smtp international
-     secure: true, // force port 465
-     // default port
     auth: {
       type: 'OAuth2',
       user: user.email,
@@ -252,18 +249,24 @@ router.post('/forgot-password', async (req, res) => {
       Here is your password reset link: ${link}`,
   };
 
-  transporter.sendMail(mailOptions, function (err, data) {
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailOptions, function (err, data) {
     if (err) {
       res.json({
         status: 'fail',
       });
+      reject(err);
     } else {
       console.log('== Message Sent ==');
       res.json({
         status: 'success',
       });
+    resolve(info);
     }
   });
+  });
+
+ 
 });
 
 router.put('/reset-password/:id', async (req, res) => {
