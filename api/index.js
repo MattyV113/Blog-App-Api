@@ -25,7 +25,7 @@ app.use(express.json());
 app.use('/api/users', userRoute);
 app.use('/api/posts', postRoute);
 
-const PORT = 5000;
+const PORT = 5001;
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Listening on Port ${PORT}`);
