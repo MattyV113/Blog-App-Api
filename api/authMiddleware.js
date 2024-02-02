@@ -13,6 +13,6 @@ export const authMiddleware = async (req, res, next) => {
   } catch (err) {
     console.log(err);
     res.clearCookie('token');
-    res.redirect('http://localhost:5174/');
+    res.redirect('https://blog-app-production-9068.up.railway.app');
   }
 };
